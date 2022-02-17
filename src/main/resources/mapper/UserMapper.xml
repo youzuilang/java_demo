@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <select id="getAccount" resultType="com.example.demo.bean.UserBean">
+        SELECT * FROM d_a_user WHERE account=#{account} AND pwd=#{pwd}
+    </select>
+</mapper>
